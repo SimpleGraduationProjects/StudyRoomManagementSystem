@@ -65,14 +65,18 @@ public class UOrderInfoController {
         
         SysSettingInfoExample se = new SysSettingInfoExample();
         List<SysSettingInfo> sl = sysSettingInfoMapper.selectByExample(se);
-        Integer startTime = sl.get(0).getStartTime();
-        Integer endTime = sl.get(0).getEndTime();
-        for(int i=startTime;i<=endTime;i++){
-        	Map<String,Object> map = new HashMap<String,Object>();
-        	map.put("id", i);
-        	map.put("name", i+":00");
-        	timeList.add(map);
+        if(sl!=null&&sl.size()>0){
+            Integer startTime = sl.get(0).getStartTime();
+            Integer endTime = sl.get(0).getEndTime();
+
+            for(int i=startTime;i<=endTime;i++){
+                Map<String,Object> map = new HashMap<String,Object>();
+                map.put("id", i);
+                map.put("name", i+":00");
+                timeList.add(map);
+            }
         }
+
         
         modelMap.addAttribute("timeList",timeList); 
         

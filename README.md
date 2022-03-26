@@ -16,7 +16,7 @@
 ## 简介
 
 > 本代码来源于网络, 请入群(123300273)后联系群主索要sql文件!
-
+> http://localhost:8080/study_room_sys/commonapi/sys_login
 ## 环境
 
 - <b>IntelliJ IDEA 2009.3</b>
@@ -27,6 +27,7 @@
 
 - <b>JDK 1.8</b>
 
+> 请求路径:http://localhost:8080/study_room_sys/commonapi/sys_login
 
 ## 缩略图
 
@@ -42,7 +43,6 @@
 ## License
 
 ##### [个人站点: 全栈九九六(Java全栈知识资料下载)](https://www.blog996.com/)
-##### [个人博客: 博客园精品博客](https://www.cnblogs.com/yysbolg/)
 ##### [更多论文: 精品论文查看](https://www.cnblogs.com/yysbolg/category/1886262.html)
 ##### [更多论文: 全目录查看](https://www.blog996.com/md/2021-09-22-1632317852192.html)
 

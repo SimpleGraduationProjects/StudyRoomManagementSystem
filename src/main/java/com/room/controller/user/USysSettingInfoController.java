@@ -55,7 +55,11 @@ public class USysSettingInfoController {
         modelMap.addAttribute("user", userInfo);
         SysSettingInfoExample se = new SysSettingInfoExample();
         List<SysSettingInfo> sl = sysSettingInfoMapper.selectByExample(se);
-        modelMap.addAttribute("setting", sl.get(0));
+        SysSettingInfo sysSettingInfo=null;
+        if(sl!=null&& sl.size()>0){
+            sysSettingInfo=sl.get(0);
+        }
+        modelMap.addAttribute("setting", sysSettingInfo);
         return "user/sys_setting_info/detail";
     }
 
